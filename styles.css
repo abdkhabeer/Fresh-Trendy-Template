@@ -1,0 +1,239 @@
+/* ===== Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcfdf9;
+    color: #333;
+    line-height: 1.7;
+    padding: 20px;
+  }
+  
+  a {
+    color: #5dbf50;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ===== Header ===== */
+  .main-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .logo span {
+    color: #f7b733;
+  }
+  
+  /* ===== Navigation ===== */
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* ===== Hero Section ===== */
+  .hero {
+    background: url("./imagesFT/hero-organic\ kitchen.jpg") center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero-text {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 10px;
+  }
+  
+  .hero h2 {
+    font-size: 1.8rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #5dbf50;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  
+  .cta-btn:hover {
+    background-color: #4caf50;
+  }
+
+  .testimonial-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  blockquote {
+    background-color: #f5fff3;
+    border-left: 4px solid #5dbf50;
+    padding: 20px;
+    font-style: italic;
+    border-radius: 8px;
+    color: #333;
+  }
+  
+  .author {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    color: #777;
+  }
+  
+  @media (min-width: 768px) {
+    .testimonial-grid {
+      flex-direction: row;
+    }
+  
+    blockquote {
+      flex: 1;
+    }
+  }
+
+  .newsletter-form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .newsletter-form button {
+    background-color: #5dbf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #4caf50;
+  }
+  
+  @media (min-width: 600px) {
+    .newsletter-form {
+      flex-direction: row;
+    }
+  
+    .newsletter-form input {
+      flex: 1;
+    }
+  }
+  
+  
+
+  
+  /* ===== Sections ===== */
+  .section {
+    margin-bottom: 50px;
+  }
+  
+  .section h3 {
+    font-size: 1.4rem;
+    color: #5dbf50;
+    margin-bottom: 10px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  /* ===== Footer ===== */
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 60px;
+  }
+  
+  /* ===== Responsive Styles ===== */
+  @media (min-width: 768px) {
+    .hero h2 {
+      font-size: 2.2rem;
+    }
+  
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .product-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    body {
+      padding: 40px;
+    }
+  }
+  
+/* 
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+  }
+   */
